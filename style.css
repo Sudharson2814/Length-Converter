@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  background-color: gray;
+  place-content: center;
+  display: flex;
+  font-family: monospace;
+}
+
+.main-container {
+  background-color: black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 50vh;
+  height: 50vh;
+  top: 20vh;
+  padding: 40px;
+  border: 1px solid white;
+  border-radius: 12px;
+}
+h1 {
+  color: white;
+}
+input {
+  border-radius: 4px;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-family: monospace;
+}
+button {
+  border-radius: 4px;
+  padding: 5px;
+  margin-top: 20px;
+  font-family: monospace;
+  cursor: pointer;
+}
+#result {
+  color: aliceblue;
+  text-align: center;
+  margin-top: 10px;
+}

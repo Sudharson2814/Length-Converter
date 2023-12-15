@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>length converter</title>
+    <style></style>
+    <link rel="stylesheet" href="../length converter/style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>Length Converter</h1>
+      <input type="text" id="input" placeholder="lenght in cm" />
+      <button id="bt" onclick="cal()">Convert to Inches</button>
+      <div id="result"></div>
+    </div>
+    <script>
+      function cal() {
+        const cmval = Number(document.getElementById("input").value);
+        const inchval = cmval / 2.54;
+        const result = document.getElementById("result");
+        result.innerHTML = inchval.toFixed(2) + "\tinches";
+      }
+    </script>
+  </body>
+</html>
